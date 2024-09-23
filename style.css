@@ -1,0 +1,359 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+}
+
+:root {
+  --main-color:rgb(230, 191, 22);
+  --text-color:rgb(107, 107, 107);
+  --title-color:rgb(83, 83, 83);
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  color: var(--text-color);
+}
+
+
+
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 100px;
+  transition: 0.5s linear;
+  background-color: whitesmoke;
+  box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.192);
+}
+
+.logo img {
+  width: 60px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  padding: 8px 17px;
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: 0.25s linear;
+  border-radius: 20px;
+}
+
+.navbar a:hover {
+  color: white;
+  background-color: gray;
+}
+
+#menu-icon {
+  color: black;
+  font-size: 1.3rem;
+  z-index: 100;
+  cursor: pointer;
+  display: none;
+}
+
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: url(Things/Family\ Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .home-text h3 {
+  font-size: 1.7rem;
+  color: var(--title-color);
+  margin-bottom: 0.5rem;
+}
+
+.home .home-text h1 {
+  color: var(--main-color);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.home .home-text p {
+  color: var(---color);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.home .home-text span {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+ .home .home-text .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border: 3px solid var(--main-color);
+  color: white;
+  background-color: var(--main-color);
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  transition: background 0.25s linear;
+ }
+
+ .home .home-text .btn:hover {
+  background-color: transparent;
+ }
+
+
+ .about {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+
+
+ .about .about-text h2 {
+  color: var(--title-color);
+  font-size: 2rem;
+  margin: 4em 0;
+ }
+
+ .about .about-text p {
+  padding: 15px 0;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+ }
+
+ 
+ .about .about-text .btn {
+  display: inline-block;
+  margin: 4rem 0;
+  border: 3px solid var(--main-color);
+  color: white;
+  background-color: var(--main-color);
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  transition: background 0.25s linear;
+ }
+
+.about .about-text .btn:hover {
+  background-color: transparent;
+  color: var(--main-color);
+ }
+
+
+
+ .heading {
+  text-align: center;
+ }
+
+ .doctors .heading h2 {
+  font-size: 1.8rem;
+  color: var(--title-color);
+  font-weight: 700;
+ }
+
+.doctor-container {
+  display: grid;
+  grid-template-columns: 500px;
+  justify-content: center;
+  margin: 10rem 0;
+ }
+
+ .doctor-container .box {
+  text-align: center;
+ }
+
+ .doctor-container .box img {
+  border-radius: 20px;
+ }
+
+ .doctor-container .box h3{
+  margin: 1.5rem 0;
+  font-size: 1.8rem;
+  color: var(--main-color);
+  text-transform: uppercase;
+ }
+
+ .doctor-container .box p {
+  margin: 1.5rem 0;
+  font-size: 1.4rem;
+  font-weight: 800;
+ }
+
+ .doctors .doctor-container .btn {
+  display: inline-block;
+  margin: 1.5rem 0;
+  border: 3px solid var(--main-color);
+  color: white;
+  background-color: var(--main-color);
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  transition: background 0.25s linear;
+ }
+
+ .doctors .doctor-container .btn:hover {
+  background-color: transparent;
+  color: var(--main-color);
+ }
+
+ .contact .heading h2 {
+  margin-bottom: 5em;
+ }
+
+.contact .container {
+  width: 85%;
+  margin: 0px auto;
+  padding: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns:1fr;
+  gap: 30px;
+}
+
+.card {
+  box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.329);
+  text-align: center;
+  padding: 60px 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.card:hover {
+  scale: 1.1;
+}
+
+.card i {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.card a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+
+
+@media (max-width:700px) {
+  #menu-icon {
+    display: initial;
+  }
+
+  .logo img {
+    width: 45px;
+  }
+
+  header {
+    padding: 10px 25px;
+  }
+
+  .doctor-container  {
+    grid-template-columns: 400px;
+  }
+
+  .about .about-text h2{
+    font-size: 1.5rem;
+  }
+
+  .about .about-text p{
+    font-size: 1rem;
+  }
+
+  .doctors .heading h2 {
+    margin-top: 4rem;
+    font-size: 1.2rem;
+  }
+
+  .doctor-container .box h3 {
+    font-size: 1.2rem;
+  }
+
+  .doctor-container .box p {
+    font-size: 1.3rem;
+  }
+
+  .doctor-container .box .btn {
+    font-size: 1rem;
+  }
+
+  .home .home-text h3{
+    font-size: 1rem;
+  }
+  .home .home-text h1 {
+    font-size: 2rem;
+  }
+  .home .home-text p {
+    font-size: 1rem;
+    width: 350px;
+  }
+
+  .home .home-text .btn {
+    font-size: 0.9rem;
+  } 
+  
+
+
+  .navbar {
+    position: absolute;
+    top: -300px;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    row-gap: 1.4rem;
+    padding: 30px 0;
+    transition: 0.3s;
+    text-align: center;
+    
+  }
+  .navbar a {
+    display: inline-block;
+    padding: 5px 0;
+  }
+
+  .navbar.active {
+    top: 100%;
+  }
+
+
+}
+
+
